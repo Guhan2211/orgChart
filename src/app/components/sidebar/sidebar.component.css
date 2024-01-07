@@ -1,18 +1,20 @@
+.form-control{
+  margin-left: 5px;
+}
+
+/* .fixed-search {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+} */
+
 .sidebarScroll{
 
   overflow-y: scroll;
   max-height: 100vh;
 
-}
-
-
-body{
-  overflow: hidden;
-}
-
-.tree{
-  padding-left:0!important ;
-  padding-right:0!important ;
 }
 
 ::-webkit-scrollbar {

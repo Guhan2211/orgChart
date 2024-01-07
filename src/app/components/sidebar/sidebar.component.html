@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row fixed-search mt-3">
+    <label for="ss" class="form-label">Filter by Text</label>
+    <input type="text" [(ngModel)]="searchStirng" class="form-control" id="ss" aria-describedby="ss" (input)="filterEmps()" placeholder="Name/Designation/Team">
+
+    <div class="row mt-2 ">
+      <div class="col-auto align-self-center">
+        <label  class="form-label">Filter by Team</label>
+      </div>
+      <div class="col-auto align-self-center">
+        <div ngbDropdown class="d-inline-block" id="dd">
+          <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+            {{team==''?'All':team}}
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1" >
+            <button (click)="filterTeams('')" value="" ngbDropdownItem>All</button>
+            <button (click)="filterTeams(team)" value="team" *ngFor="let team of teams" ngbDropdownItem>{{team}}</button>
+          </div>
+      </div>
+      </div>
+
+
+    </div>
+
+
+</div>
+
+<div id="employees" class="sidebarScroll mt-1">
+  <app-emp-card (click)="empClicked(emp.id)" class=".emp-cards" *ngFor="let emp of filteredEmployees" [employee]="emp"></app-emp-card>
+</div>
+
+
+
+
+</div>
+

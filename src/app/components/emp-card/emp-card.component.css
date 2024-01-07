@@ -1,0 +1,37 @@
+
+.card {
+  max-width: 95%;
+  flex-direction: row;
+  background-color: #039BE5!important;
+  border: 0;
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18);
+  margin: 1px auto;
+  color: aliceblue;
+}
+
+.card.card.bg-light-subtle .card-title {
+  color: ghostwhite;
+}
+
+.card img {
+  max-width: 30%;
+  margin: auto;
+  padding: 0.5em;
+  border-radius: 5rem;
+}
+.card-body {
+  display: flex;
+  justify-content: space-between;
+}
+.text-section {
+  max-width: 75%;
+}
+.card.bg-light-subtle  .btn {
+  background-color: #039BE5!important;
+  border-color: #039BE5!important;
+}
+@media screen and (max-width: 475px) {
+  .card {
+    font-size: 0.9em;
+  }
+}
