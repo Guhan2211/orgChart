@@ -73,6 +73,8 @@ export default function  runMock(){
     routes(){
 
       this.passthrough('https://s-ind-balkangraph.azurewebsites.net/api/OrgChartJS');
+      this.passthrough('https://au-e-ind-balkangraph.azurewebsites.net/api/OrgChartJS');
+
 
       this.namespace = '/api';
       this.get('/employees',()=>{
